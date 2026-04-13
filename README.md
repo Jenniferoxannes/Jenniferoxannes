@@ -1,12 +1,32 @@
-- 👋 Hi, I’m @Jenniferoxannes
-- 👀 I’m interested in creating automated posts and scheduling for new clients, searching for what is the best way to get new clients!
-- 🌱 I’m currently learning a lot
-- 💞️ I’m looking to collaborate on automation
-- 📫 How to reach me jenniferoxannes@gmail.com
-- 😄 Pronouns: she, her
-- ⚡ Fun fact: 48, single again, looking a fresh start in eveything! Also fun fact, dash baords are named for the board between driver and horse when the horses pulling you run! 
+## Transportation STEM Program
 
-<!---
-Jenniferoxannes/Jenniferoxannes is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+This repository now includes a small STEM-based transportation recommender:
+
+- File: `transport_optimizer.py`
+- Purpose: estimate the **best way to travel** based on measurable factors:
+  - travel time
+  - travel cost
+  - CO2 emissions
+
+### How it works
+
+1. Enter distance in miles.
+2. Set importance weights for time, cost, and emissions.
+3. The program normalizes each metric and calculates a weighted score.
+4. It returns the best option and a full ranking across:
+   - Car
+   - Bus
+   - Train
+   - Bike
+   - Walk
+
+### Run
+
+```bash
+python3 transport_optimizer.py
+```
+
+### Example use case
+
+If you care more about low emissions and low cost than speed, increase those weights.
+The recommendation will shift toward options like train, bike, or walking for shorter distances.
